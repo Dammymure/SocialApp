@@ -8,10 +8,10 @@ const UserImage = ({ image, size = "60px " }) => {
         width={size}
         height={size}
         alt="user"
-        src={`http://localhost:5000/assets/${image}`}
+        src={`${process.env.REACT_APP_API_URL}/assets/${image}`}
       />
     </Box>
   );
 };
 
-export default UserImage
+export default UserImage;
